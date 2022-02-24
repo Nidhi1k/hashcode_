@@ -1,0 +1,59 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int C,P;
+	//C = the number of contributors.
+	//P = the number of projects.
+	cin>>C>>P;
+	//submission 
+	//cout<<C<<" "<<P<<endl; // 2 contibutors 3 projects
+	cout<<C<<endl;
+    /****************** c sections followed by************/
+    for(int i=0;i<C;i++)
+    {
+        char contributor_name[20];
+        cin>>contributor_name;
+        //cout<<contributor_name<<" ";
+        int N;
+        //the number of skills of the contributor.
+         cin>>N;
+         //cout<<N<<endl;
+        string skill[N];
+        int skill_level[N];
+        for(int i=0;i<N;i++)
+        
+            {
+               cin>>skill[i];
+               cin>>skill_level[i];
+               //cout<<skill[i]<<" "<<skill_level[i]<<endl;
+            }
+    }
+     /****************** p sections followed by************/
+     int D[P]={0},S[P]={0},B[P]={0},R[P]={0};
+     
+     for(int i=0;i<P;i++)
+     {
+         char project_name[20];
+         cin>>project_name;
+         //cout<<project_name<<" ";
+         
+         cin>>D[i]>>S[i]>>B[i]>>R[i];
+         //cout<<D[i]<<" "<<S[i]<<" "<<B[i]<<" "<<R[i]<<endl;
+         char no_of_roles[20];
+         int levelofSkill[R[i]];
+         
+      for(int i=0;i<R[i];i++)
+         {
+             cin>>no_of_roles;
+            // cout<<no_of_roles<<" ";
+             cin>>levelofSkill[i];
+            // cout<<levelofSkill[i]<<endl;
+         }
+       }
+	
+	
+	return 0;
+}
